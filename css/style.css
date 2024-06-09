@@ -1,0 +1,106 @@
+.navbar {
+  background-color: #ffffff;
+}
+.login-button {
+  background-color: lightgray;
+  color: black;
+  font-size: 14px;
+  padding: 8px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: 0.3s background-color;
+}
+
+.login-button:hover {
+  background-color: gray;
+}
+
+.navbar-toggler {
+  border: none;
+  font-size: 1.25rem;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.nav-link {
+  color: white;
+  font-weight: 500;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #000;
+}
+
+/* .... */
+
+.card img {
+  padding: 5px;
+  cursor: pointer;
+  transition: all 500ms ease-in-out;
+}
+.card img:hover {
+  transform: scale(1.1);
+  border-radius: 20px;
+}
+.hal3 .card .heading1 {
+  color: rgb(7, 7, 7);
+  line-height: 1;
+  text-align: center;
+}
+.card .heading1 h4 {
+  font-size: 15px;
+}
+.card .heading1 p {
+  align-items: center;
+}
+.heading1 h6 {
+  font-size: 13px;
+  margin-top: -10px;
+}
+
+/*  */
+.card-body h3 {
+  font-size: 15px;
+  font-weight: 500;
+  /* margin-top: 8px; */
+  text-align: center;
+}
+.card-body h5 {
+  font-size: 15px;
+  font-weight: 500;
+  /* margin-top: 8px; */
+  text-align: center;
+}
+.card-body img {
+  height: 290px;
+  border-radius: 10px;
+  transition: all 500ms ease-in-out;
+}
+.card-body img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.imdb p {
+  background: lightgray;
+  border-radius: 50px;
+  position: absolute;
+  padding: 5px 5px;
+  color: black;
+  margin-top: -85px;
+  margin-left: 128px;
+  font-weight: bolder;
+}
+.imdbb p {
+  background: lightgray;
+  border-radius: 50px;
+  position: absolute;
+  padding: 5px 5px;
+  color: black;
+  margin-top: -85px;
+  margin-left: 135px;
+  font-weight: bolder;
+}
