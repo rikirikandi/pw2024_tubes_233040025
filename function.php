@@ -82,7 +82,7 @@ function upload() {
     $namaFilebaru .= $ekstensiGambar;
 
     // gambar di upload
-    move_uploaded_file($tmpName, 'img/img/' . $namaFilebaru);
+    move_uploaded_file($tmpName, 'img/film/' . $namaFilebaru);
 
     return $namaFilebaru;
 

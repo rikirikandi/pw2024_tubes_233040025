@@ -61,12 +61,12 @@ if(isset($_POST['cari'])) {
         <nav class="navbar bg-body-tertiary">
           <div class="container-fluid">
             <form class="d-flex" role="search" action="" method="POST">
-              <input class="form-control me-1" type="search" name="keyword" placeholder="cari disini..." autocomplete="off" aria-label="Search">
+              <input class="form-control me-1" type="search" name="keyword" placeholder="Cari disini..." autocomplete="off" aria-label="Search" />
               <button class="btn btn-outline-success" type="submit" name="cari">Cari</button>
             </form>
           </div>
         </nav>
-        <a href="" class="login-button">Login</a>
+        <a href="login.php" class="login-button">Login</a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -76,7 +76,7 @@ if(isset($_POST['cari'])) {
     <!-- Akhir Navbar -->
 
     <!-- Hal2 -->
-    <section class="hal2" id="Home">
+    <section class="hal2" id="home">
       <div id="carouselExampleCaptions" class="carousel slide">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -118,123 +118,124 @@ if(isset($_POST['cari'])) {
     </section>
     <!-- End hal2 -->
 
+    <!-- Film1 -->
     <section class="hal3" id="movie">
       <div class="container">
-        <h1 class="m-3">Movie</h1>
-        <!-- <h4 class="m-3">HOLLYWOOD</h4> -->
+        <h1 class="mt-5">Movie</h1>
         <div class="card-group">
           <?php foreach($movie as $mv):?>
           <div class="card me-3">
-            <img src="img/img/<?= $mv['gambar'];?>" class="card-img-top" alt="..." />
+            <img src="img/film/<?= $mv['gambar'];?>" class="card-img-top" alt="..." />
             <div class="heading1">
               <h4><?= $mv['judul'];?></h4>
               <p><span>&#9733;&#9733;&#9733;&#9733;&#9733;</span></p>
               <h6><?= $mv['genre'];?></h6>
-            </div>  
-          </div>      
-        <?php endforeach?>
+            </div>
+          </div>
+          <?php endforeach?>
         </div>
       </div>
     </section>
+    <!-- End -->
 
-    <!-- 3 -->
-    <div class="container mt-5">
-      <div class="card-group">
-        <div class="card">
-          <img src="img/hollywood/v1.jpg" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h3>Kingdom</h3>
-            <div class="imdb">
-              <p>9.5</p>
+    <!-- Film2 -->
+    <section class="hal4">
+      <div class="container mt-5">
+        <div class="row row-cols-1 row-cols-md-6">
+          <div class="col">
+            <div class="card">
+              <img src="img/film/v1.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Kingdom Planet</h5>
+                <div class="imdbb">
+                  <p>9.5</p>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="card">
-          <img src="img/hollywood/v2.jpg" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h3>Mission Imposible</h3>
-            <div class="imdb">
-              <p>9.5</p>
+          <div class="col">
+            <div class="card h-100">
+              <img src="img/film/v2.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Mission Imposible</h5>
+                <div class="imdbb">
+                  <p>9.5</p>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="card">
-          <img src="img/hollywood/v3.jpg" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h3>Godzila</h3>
-            <div class="imdb">
-              <p>9.5</p>
+          <div class="col">
+            <div class="card h-100">
+              <img src="img/film/v3.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Godzila Vs Kingkong</h5>
+                <div class="imdbb">
+                  <p>9.5</p>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="card">
-          <img src="img/hollywood/v4.jpg" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h3>Top Gun</h3>
-            <div class="imdb">
-              <p>9.5</p>
+          <div class="col">
+            <div class="card h-100">
+              <img src="img/film/v4.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Top Gun</h5>
+                <div class="imdbb">
+                  <p>9.5</p>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="card">
-          <img src="img/hollywood/v5.jpg" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h3>No time</h3>
-            <div class="imdb">
-              <p>9.5</p>
+          <div class="col">
+            <div class="card h-100">
+              <img src="img/film/v5.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">No Time No Die</h5>
+                <div class="imdbb">
+                  <p>9.5</p>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="card">
-          <img src="img/hollywood/v6.jpg" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h3>Fast X</h3>
-            <div class="imdb">
-              <p>9.5</p>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <img src="img/hollywood/p1.jpg" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h3>Fast X</h3>
-            <div class="imdb">
-              <p>9.5</p>
+          <div class="col">
+            <div class="card h-100">
+              <img src="img/film/v6.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Fast X</h5>
+                <div class="imdbb">
+                  <p>9.5</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- .... -->
+    </section>
+    <!-- End -->
 
-
-
-    <!-- Series -->
+    <!-- Series1 -->
     <section class="hal3" id="series">
       <div class="container">
-        <h1 class="m-4">Series</h1>
-        <!-- <h4>HOLLYWOOD</h4> -->
+        <h1 class="m-4;">Series</h1>
         <div class="card-group">
-        <?php foreach($series as $ss):?>
+          <?php foreach($series as $ss):?>
           <div class="card me-3">
-            <img src="img/img/<?= $ss['gambar'];?>" class="card-img-top" alt="..." />
+            <img src="img/film/<?= $ss['gambar'];?>" class="card-img-top" alt="..." />
             <div class="heading1">
               <h4><?= $ss['judul'];?></h4>
               <p><span>&#9733;&#9733;&#9733;&#9733;&#9734;</span></p>
               <h6><?= $ss['genre'];?></h6>
             </div>
-          </div> 
-          <?php endforeach?> 
+          </div>
+          <?php endforeach?>
         </div>
       </div>
     </section>
-    <!--  -->
+    <!-- End -->
 
-    <!--  -->
-    <!-- Tollywood -->
+    <!-- Series2 -->
     <section class="hal4">
       <div class="container mt-5">
-        <!-- <h4>Tollywood</h4> -->
         <div class="row row-cols-1 row-cols-md-6">
           <div class="col">
             <div class="card">

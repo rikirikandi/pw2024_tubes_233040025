@@ -37,6 +37,9 @@
 
 /* .... */
 
+.h1 {
+  text-align: center;
+}
 .card img {
   padding: 5px;
   cursor: pointer;

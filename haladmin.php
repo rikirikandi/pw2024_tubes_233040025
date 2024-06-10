@@ -62,7 +62,7 @@ if(isset($_POST['cari'])) {
       <th><?= $i?></th>
       <td><?= $film['judul']; ?></td>                     
       <td><?= $film['genre']; ?></td>
-      <td><img src="img/img/<?= $film["gambar"]?> " alt="" width="60"></td>
+      <td><img src="img/film/<?= $film["gambar"]?> " alt="" width="60"></td>
       <td>
         <a href="ubah.php?id=<?= $film['id_film']; ?>" class="badge text-bg-warning text-decoration-none">Ubah</a>
         <a href="hapus.php?id=<?= $film['id_film']; ?>" onclick="return confirm('yakin?')" class="badge text-bg-danger text-decoration-none">Hapus</a>
